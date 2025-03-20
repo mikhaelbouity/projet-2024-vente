@@ -173,7 +173,7 @@ if(isset($_POST["bout_mess"]))
                                                  -->
                                         <?php   }else{ ?>
                                                     <div class="chat-bubble outgoing-chat" >
-                                                        <div class="chat-message" style="background-color: #548ddd">
+                                                        <div class="chat-message" style="background-color: #170590">
                                                             <p><?=$mess["contenu"]?>
                                                             </p>
                                                         </div>

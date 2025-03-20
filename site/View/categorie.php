@@ -88,7 +88,7 @@ $result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>JALE - Great Deal</title>
+    <title>MBM -  Deal</title>
     <?php include 'include/header.php'; ?>
 </head>
 <body style="background-color: #f2edf3">
@@ -118,7 +118,7 @@ $result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
                             <!-- pour chaque resultat selon la requete on rentre dans la boucle foreach puis on affiche pour chaque annonce :
                             sa photo, son etat, son format, sa livraison puis un bouton pour acceder au detail du produit -->
                                 <?php foreach($result2 as $ligne){ ?>
-                                <div class= 'p-5 text-center' style='background-color:#F3F781'>
+                                <div class= 'p-5 text-center' style='background-color: #170590'>
                                     <div class='card'>
                                         <div class='row'>
 

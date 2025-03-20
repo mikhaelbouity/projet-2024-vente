@@ -187,9 +187,9 @@ if(isset($_POST["send"])){
 
                                 </div>
                                 <div class="modal-footer">
-                                    <input type="submit" class="btn btn-primary" name="send" value="Envoyer message">
+                                    <input type="submit" class="btn btn-warning" name="send" value="Envoyer message">
                                     </form>
-                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+                                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Fermer</button>
                                 </div>
                             </div>
                         </div>

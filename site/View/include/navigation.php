@@ -55,7 +55,7 @@ if(isset($_POST["search"])){
             <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
                 <ul class="navbar-nav mr-lg-2">
                     <li class="nav-item d-none d-lg-block">
-                        <a class="btn btn-primary" style="background-color: #007bff" href="<?php if(isset($uid)): ?>nvAnnonces.php <?php else: ?> connexion.php <?php endif; ?>">
+                        <a class="btn btn-primary" style="background-color: #170590  " href="<?php if(isset($uid)): ?>nvAnnonces.php <?php else: ?> connexion.php <?php endif; ?>">
                             <i class="fa-regular fa-square-plus "></i><span class="menu-title "> Nouvelle Annonce</span>
                         </a>
                     </li>
@@ -66,9 +66,7 @@ if(isset($_POST["search"])){
                         <i class="fa-solid fa-magnifying-glass"></i>
                       </span>
                             </div>
-                            <form action="" method="post">
-                                <input type="text" class="form-control" id="navbar-search-input" name="search"  placeholder="Chercher une annonce" placeholder="Rechercher" aria-label="search" aria-describedby="search">
-                            </form>
+                            
                         </div>
                     </li>
                 </ul>
@@ -140,7 +138,7 @@ if(isset($_POST["search"])){
             </div>
         </div>
     </nav>
-    <nav class="bottom-navbar" style="background-color: #DFD019">
+    <nav class="bottom-navbar" style="background-color: #170590">
         <div class="container">
             <ul class="nav page-navigation">
                 <li class="nav-item <?= $romance ?>">

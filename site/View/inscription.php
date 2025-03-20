@@ -208,7 +208,7 @@ if(isset($_POST['submit']))
 
                             </form>
                         </div>
-                    <div class="text-center mt-4 font-weight-light"> Vous avez déjà un compte ? <a href="connexion.php" class="btn btn-primary">Connexion</a>
+                    <div class="text-center mt-4 font-weight-light"> Vous avez déjà un compte ? <a href="connexion.php" class="btn btn-warning">Connexion</a>
                     </div>
                     </div>
                 </div>

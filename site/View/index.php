@@ -30,45 +30,6 @@ if(isset($_POST["recherche"])){
             <div class="content-wrapper container">
 
 
-                <div class="row">
-
-                    <div class="grid-margin stretch-card">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2 class="text-center">Recherche</h2>
-
-                                <form method="post" action="">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <select class="form-select" name="categorie">
-                                                    <?php
-                                                    $req=$pdo->query("select * from categorie");
-                                                    $resultat=$req->fetchAll();
-                                                    foreach($resultat as $categorie){
-                                                        echo "<option value='".$categorie["idc"]."'>".$categorie["nomCat"]. "</option><br>";
-                                                    }
-                                                    ?>
-                                                </select>
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="Entrer le titre de l'annonce" name="recherchetext" aria-label="Text input with dropdown button">
-                                            <div class="input-group-append">
-                                                <input type="submit" class="btn btn-warning" name="recherche" value="Rechercher">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-
-                                <div class="text-center">
-                                    <a class="btn btn-warning" style="background-color: #19cbdf " href="<?php if(isset($uid)): ?>nvAnnonces.php <?php else: ?> /jalegreatdeal/View/connexion.php <?php endif; ?>">
-                                        <i class="fa-regular fa-square-plus "></i><span class="menu-title "> Nouvelle Annonce</span>
-                                    </a>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="grid-margin stretch-card">
                         <div class="card">
@@ -132,7 +93,7 @@ if(isset($_POST["recherche"])){
                                                         <span class="badge badge-success">Romans étrangers <i class="fa-solid fa-earth-europe mx-2"></i></span>
                                                         <?php endif; ?>
                                                 </ul>
-                                                <a href="detail.php?ida=<?= $tableau["ida"] ?>" class="btn btn-inverse-warning">Voir</a>
+                                                <a href="detail.php?ida=<?= $tableau["ida"] ?>" class="btn btn-inverse-primary">Voir</a>
                                             </div>
                                         </div>
                                     </div>
